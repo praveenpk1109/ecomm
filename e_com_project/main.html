@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <script
+        src="https://kit.fontawesome.com/8f27d68390.js"
+        crossorigin="anonymous"
+      ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerece Website</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="box1">
+            <div id="option">
+                <h1 style="font-family:serif;color:orange;text-shadow:1px 1px 3px orange;padding-left:50px;padding-top:20px;"> &nbsp;&nbsp;	  &nbsp;SNEAKERS</h1>
+                <div id="nav">
+                
+                    <ul id="center">
+                
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                          
+                    </ul>
+                    <hr style="border-color:black;margin-left:-170px;">
+        
+                </div>
+        
+        
+            </div>
+            <div id="cp">
+                <div id="details">
+                    <span onclick="display()">
+                        <i class="fa-solid fa-cart-shopping" style="color:orange;cursor:pointer;"></i></span>
+                    <div id="imp"></div>
+                    
+                    <div id="listitem">
+                        <div>
+                            <div>Cart</div>
+                            <span onclick="remove()">
+                            <i class="fa-regular fa-rectangle-xmark"></i></span>
+                        </div>
+                        <div id="display">
+                            <div id="fetch">
+                                <div id="disimage"><img /></div>
+                                <div id="overall"></div>
+                                <div id="del" onclick="clear4()"><img src="images/icon-delete.svg" ></div>
+                            </div>
+                            <div id="remm" onclick="clear5()">
+                                <p>Check Out</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img id="picture" src="images/image-avatar.png" alt="picture">
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image1">
+                <div class="primary_image" id="bgimg1" onclick="image()"></div>
+                <div class="second_image">
+                    <img onclick="photoclick1()" src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+                    <img onclick="photoclick2()" src="images/image-product-2-thumbnail.jpg" alt="" srcset="">
+                    <img onclick="photoclick3()" src="images/image-product-3-thumbnail.jpg" alt="" srcset="">
+                    <img onclick="photoclick4()" src="images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div id="popup">
+                <div id="image2">
+                    <div id="bgimg" class="primary_image">
+
+                        <span onclick="clear3()" ><i class="fa-solid fa-xmark" style="margin-left:475px;color:red;margin-top:-150px;" ></i></span>
+
+
+                        <div id="imagenav">
+                            <div id="left" onclick="imageleft()" style="color:orange;"><</div>
+                            <div id="right" onclick="imageright()" style="color:orange;">></div>
+                        </div>
+                    </div>
+                    <div class="second_image">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="" srcset="">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="" srcset="">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="products">
+                <p>SNEAKER COMPANY</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <h5>These low-profile sneakers are your perfect casual wear companion. Featured a durable rubber outter
+                    sole, They'll withstand everthing the weather can offer.</h5>
+                <div id="price_details">
+                    <div id="cost">
+                        <h2>$125.00</h2>
+                        <h6>50%</h6>
+                    </div>
+                    <br>
+                    <h5><s style="color:gray;">$250.00</s></h5>
+                </div>
+                <div id="purchace">
+                    <div id="cart">
+                        <div class="cart" onclick="prev()">    
+                            <i class="fa-solid fa-minus" style="color:orange;"></i></span>
+                            <div id="imp"></div></div>
+                        <div class="cart"><output id="num" style="color:gray;">0</output></div>
+
+                        <div class="cart" onclick="next()">
+                            <i class="fa-solid fa-add" style="color:orange;"></i>
+                        </div>
+                    </div>
+                    <div id="add_cart" onclick="notification()">
+                        <i class="fa-solid fa-cart-shopping"style="color:white"></i></span>
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
